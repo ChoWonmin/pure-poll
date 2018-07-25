@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    link(rel='stylesheet', href='/stylesheets/login.css')
+    .title login
+    .login-form
+        .center-wrapper
+            .line.flex-wrapper
+                .text ID
+                input#id-input
+            .line.flex-wrapper
+                .text password
+                input#password-input(type='password')
+        .flex-wrapper
+            .flex-item
+                .btn#login-btn login
+            .flex-item
+                .btn#register-btn register
+    script(src="/register.js")
+
+
+
+

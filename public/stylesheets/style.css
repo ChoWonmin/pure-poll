@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+* {
+  box-sizing: border-box; }
+
+.flex-wrapper {
+  display: flex; }
+  .flex-wrapper .flex-item {
+    flex: 1; }
+
+/*# sourceMappingURL=style.css.map */
