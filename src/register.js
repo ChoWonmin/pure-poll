@@ -1,79 +1,58 @@
-// var uiConfig = {
-//     callbacks: {
-//         signInSuccessWithAuthResult: function(authResult, redirectUrl) {
-//             // User successfully signed in.
-//             // Return type determines whether we continue the redirect automatically
-//             // or whether we leave that to developer to handle.
-//             return true;
-//         },
-//         uiShown: function() {
-//             // The widget is rendered.
-//             // Hide the loader.
-//             document.getElementById('loader').style.display = 'none';
-//         }
-//     },
-//     // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
-//     signInFlow: 'popup',
-//     signInSuccessUrl: '/register',
-//     signInOptions: [
-//         // Leave the lines as is for the providers you want to offer your users.
-//         firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-//         firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-//         firebase.auth.TwitterAuthProvider.PROVIDER_ID,
-//         firebase.auth.GithubAuthProvider.PROVIDER_ID,
-//         firebase.auth.EmailAuthProvider.PROVIDER_ID,
-//         firebase.auth.PhoneAuthProvider.PROVIDER_ID
-//     ],
-//     // Terms of service url.
-//     tosUrl: '/'
-// };
-// Firebase.makeLoginUi(uiConfig);
 const register = new function() {
+    const user = {};
 
     this.addAction = function() {
-        console.log($)
 
         $('#login-btn').click(function() {
-            const auth = Firebase.getAyth();
+            const auth = Firebase.getAuth();
 
             const input = {
                 id: $('#id-input').val(),
                 password: $('#password-input').val(),
             };
 
-            const res = auth.signInWithEmailAndPassword(input.id, input.password).catch(function(error) {
-                console.log('error')
-                console.log(error);
-            });
+            const res = auth.signInWithEmailAndPassword(input.id, input.password);
 
             console.log(res);
+
+            //location.href='/';
         });
 
         $('#register-btn').click(function() {
-            const auth = Firebase.getAyth();
+            const auth = Firebase.getAuth();
+            const inputs = $('input');
+            let valid = false;
 
-            const input = {
-                id: $('#id-input').val(),
-                password: $('#password-input').val(),
-            };
-
-            const res = auth.createUserWithEmailAndPassword(input.id, input.password).catch(function(error) {
-                console.log('error')
-                console.log(error);
+            _.forEach(inputs, r => {
+                if(r.value=='' || r.value==null){
+                    valid = true;
+                }
+                user[r.name] = r.value;
             });
 
+            if (valid)
+                alert('입력창을 모두 입력해주세요');
+            if (user.kakaoId==null)
+                alert('카카오 인증해주세요');
+            if (user.password !== user.repassword)
+                alert('패스워드가 일치하지 않습니다.')
+
+            const res = auth.createUserWithEmailAndPassword(user.responserId, user.password).catch(function(error) {
+                alert(error);
+            });
             console.log(res);
 
+            delete user.password;
+            delete user.repassword;
+
+            Firebase.set(/responderList/+user.kakaoId, user);
         });
 
-
-        $('#kakao-auth-btn').click(function() {
-            KakaoApp.login();
+        $('#kakao-auth-btn').click(async function() {
+            await KakaoApp.auth();
+            user['kakaoId'] = (await KakaoApp.requestAPI()).id;
         })
 
-        $('#kakao-logout-btn').click(function() {
-            KakaoApp.logout();
-        })
     }
 }
 register.addAction();

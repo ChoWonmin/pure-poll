@@ -3,13 +3,34 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/layout.css')
+    link(href="https://fonts.googleapis.com/css?family=Lato:900|Nanum+Gothic:400,700", rel="stylesheet")
+
     script(src='/key.config.js')
     script(src="/jquery/dist/jquery.min.js")
     script(src="/lodash/lodash.min.js")
 
     script(src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js")
     script(src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js")
-    link(type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css")
     script(src='/firebase.wrapper.js')
   body
+    .header
+      .content.flex-wrapper
+        .logo.eng PurePoll
+        .nav-bar.flex-wrapper
+          b.nav-btn 회사소개
+          b.nav-btn 여론조사
+          b.nav-btn 여론조사
+        .flex-item
+        .btn-wrapper.flex-wrapper
+          b.login-nav 로그인
+          b.register-nav 회원가입
+    .modal-mask
+      .modal-wrapper
+        .modal-container
+          .modal-body
+
+
+
+    script(src='/header.js')
     block content

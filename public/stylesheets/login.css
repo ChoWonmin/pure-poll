@@ -1,18 +1,16 @@
 .login-form {
   margin: 36px auto;
-  width: 360px;
-  height: 360px;
+  width: 480px;
   background-color: #89c3ff;
   border-radius: 32px;
-  padding: 120px 60px 0 60px; }
+  padding: 60px; }
   .login-form .center-wrapper {
-    height: 120px;
-    width: 240px; }
+    width: 360px; }
     .login-form .center-wrapper .line {
       height: 72px; }
       .login-form .center-wrapper .line .text {
         color: white;
-        width: 64px; }
+        width: 132px; }
 
 input {
   outline: none;
@@ -21,19 +19,21 @@ input {
   border-radius: 12px;
   height: 24px;
   margin-left: 12px;
-  text-indent: 12px; }
+  text-indent: 12px;
+  flex: 1; }
 
 .btn {
-  width: 100px;
+  width: 112px;
   height: 48px;
-  background-color: #ff704f;
+  background-color: #eeeb3f;
   text-align: center;
   line-height: 48px;
-  color: white;
+  color: #414e5e;
   border-radius: 12px; }
   .btn:hover {
-    background-color: #ff9982; }
+    background-color: #f2f06e;
+    cursor: pointer; }
   .btn:active {
-    background-color: #ff471c; }
+    background-color: #e6e214; }
 
 /*# sourceMappingURL=login.css.map */

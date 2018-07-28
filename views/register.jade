@@ -1,10 +1,35 @@
 extends layout
 
 block content
-    .title Register
+    link(rel='stylesheet', href='/stylesheets/login.css')
 
-    .link
-        a#kakao-auth-btn 인증
+    .login-form
+        .center-wrapper
+            .line.flex-wrapper
+                .text ID
+                input(name='responserId')
+            .line.flex-wrapper
+                .text password
+                input#password(type='password', name='password')
+            .line.flex-wrapper
+                .text password 확인
+                input#repassword(type='password', name='repassword')
+            .line.flex-wrapper
+                .text 주소
+                input#addr(name='addr')
+            .line.flex-wrapper
+                .text 나이
+                input#age(name='age')
+            .line.flex-wrapper
+                .text 성별
+                input#gender(name='gender')
+
+        .flex-wrapper
+            .flex-item
+                .btn#kakao-auth-btn kakao 인증
+            .flex-item
+                .btn#register-btn register
+
 
     script(src="//developers.kakao.com/sdk/js/kakao.min.js")
     script(src="kakao.wrapper.js")

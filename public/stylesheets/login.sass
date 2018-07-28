@@ -1,18 +1,18 @@
+$btn-color: #eeeb3f
+
 .login-form
   margin: 36px auto
-  width: 360px
-  height: 360px
+  width: 480px
   background-color: #89c3ff
   border-radius: 32px
-  padding: 120px 60px 0 60px
+  padding: 60px
   .center-wrapper
-    height: 120px
-    width: 240px
+    width: 360px
     .line
       height: 72px
       .text
         color: white
-        width: 64px
+        width: 132px
 
 input
   outline: none
@@ -22,17 +22,19 @@ input
   height: 24px
   margin-left: 12px
   text-indent: 12px
+  flex: 1
 
 .btn
-  width: 100px
+  width: 112px
   height: 48px
-  background-color: #ff704f
+  background-color: $btn-color
   text-align: center
   line-height: 48px
-  color: white
+  color: #414e5e
   border-radius: 12px
   &:hover
-    background-color: lighten(#ff704f, 10)
+    background-color: lighten($btn-color, 10)
+    cursor: pointer
   &:active
-    background-color: darken(#ff704f, 10)
+    background-color: darken($btn-color, 10)
 

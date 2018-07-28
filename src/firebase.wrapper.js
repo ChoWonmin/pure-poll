@@ -2,6 +2,7 @@ const Firebase = new function() {
     var config = keyConfig.firebase.config;
     firebase.initializeApp(config);
     const database = firebase.database();
+    const auth = firebase.auth();
 
     this.set = (path, obj) => {
         database.ref(path).set(obj);
@@ -23,13 +24,9 @@ const Firebase = new function() {
 
     this.getUniqueKey = (path) => database.ref(path).push().key;
 
-    this.getAyth = function() {
-        return firebase.auth();
-    }
+    this.getAuth = () => auth;
 
-    this.signIn = async function() {
-
-    };
+    this.getCurrentUser = () => auth.currentUser;
 }
 
 /* Firebase Test */
