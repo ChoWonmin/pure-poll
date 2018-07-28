@@ -11,7 +11,7 @@ const register = new function() {
                 password: $('#password-input').val(),
             };
 
-            const res = auth.signInWithEmailAndPassword(input.id, input.password);
+            //const res = auth.signInWithEmailAndPassword(input.id, input.password);
 
             console.log(res);
 

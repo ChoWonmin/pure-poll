@@ -1,23 +1,31 @@
-extends layout
+doctype html
+html
+    head
 
-block content
+    body
+        .info-container
+            .info
+                .title.eng PurePoll
+                .sub-title 안전한 여론조사
+                .description 신 개념 블록체인 여론조사 서비스
+                .sub-info
+                    .line 언제어디서나.
+                    .line 당신의 의견을
+                    .line 정확하게
+        .login-form
+            .center-wrapper
+                .line.flex-wrapper
+                    .text ID
+                    input#id-input
+                .line.flex-wrapper
+                    .text password
+                    input#password-input(type='password')
+            .flex-wrapper
+                .flex-item
+                    .btn#login-btn login
+
     link(rel='stylesheet', href='/stylesheets/login.css')
-    .title login
-    .login-form
-        .center-wrapper
-            .line.flex-wrapper
-                .text ID
-                input#id-input
-            .line.flex-wrapper
-                .text password
-                input#password-input(type='password')
-        .flex-wrapper
-            .flex-item
-                .btn#login-btn login
-
-    script(src="//developers.kakao.com/sdk/js/kakao.min.js")
-    script(src="/kakao.wrapper.js")
-    script(src="/register.js")
+    script(src="/login.js")
 
 
 
