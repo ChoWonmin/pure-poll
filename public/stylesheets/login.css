@@ -2,14 +2,9 @@
   width: 630px;
   height: 322px; }
   .modal-container .modal-body {
-    display: flex;
-    wdith: 100%;
-    height: 100%; }
+    display: flex; }
     .modal-container .modal-body .info-container {
       width: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       background-color: #4ea5ff; }
       .modal-container .modal-body .info-container .info {
         color: #ffffff; }
@@ -24,10 +19,9 @@
           margin-top: 10px;
           padding-bottom: 4px; }
         .modal-container .modal-body .info-container .info .description {
-          font-size: 12px;
           margin-top: 8px; }
-        .modal-container .modal-body .info-container .info .sub-info .line {
-          font-size: 12px; }
+        .modal-container .modal-body .info-container .info .sub-info {
+          margin-top: 12px; }
     .modal-container .modal-body .login-form {
       width: 50%; }
 

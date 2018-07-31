@@ -11,8 +11,8 @@ $('.login-nav').click(function() {
 });
 
 $('.register-nav').click(function() {
-    $('.modal-mask').css('display','table');
-    //location.href='/register';
+    console.log('re')
+    location.href='/register';
 });
 
 
