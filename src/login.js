@@ -6,9 +6,9 @@ $('#login-btn').click(function() {
         password: $('#password-input').val(),
     };
 
-    const res = auth.signInWithEmailAndPassword(input.id, input.password);
-
-    console.log(res);
-
-    //location.href='/';
+    auth.signInWithEmailAndPassword(input.id, input.password).then(()=>{
+        $('.modal-mask').css('display', 'none');
+    }).catch((err) => {
+        $('.result').text(err.message);
+    });
 });

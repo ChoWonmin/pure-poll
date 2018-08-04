@@ -1,11 +1,18 @@
 body {
   margin: 0;
-  font: 12px "Nanum Gothic", sans-serif; }
+  font: 12px "Nanum Gothic", sans-serif;
+  background-color: #ccc; }
   body .eng {
     font-family: 'Lato', sans-serif; }
 
 * {
   box-sizing: border-box; }
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+  margin-top: 114px;
+  background-color: #fff; }
 
 .flex-wrapper {
   display: flex; }
@@ -17,11 +24,20 @@ body {
   justify-content: center;
   align-items: center; }
 
+.center-wrapper-vertical {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
 .header {
   width: 100%;
   height: 114px;
   padding: 33px 0 33px 39px;
-  box-shadow: 5px 10px #fafafa; }
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  background-color: #ffffff; }
   .header .content .logo {
     width: 180px;
     font-size: 40px;
@@ -31,7 +47,7 @@ body {
     color: #4ea5ff;
     line-height: 60px;
     font-size: 16px; }
-  .header .content .btn-wrapper .login-nav {
+  .header .content .btn-wrapper .login-nav, .header .content .btn-wrapper .logout-nav {
     width: 90px;
     color: #034EA1;
     font-size: 16px;
@@ -71,6 +87,37 @@ body {
       .modal-mask .modal-wrapper .modal-container .modal-body {
         width: 100%;
         height: 100%; }
+
+.inputWithIcon {
+  position: relative;
+  height: 36px; }
+  .inputWithIcon input {
+    padding-left: 32px;
+    width: 100%;
+    outline: none;
+    height: 36px;
+    border-radius: 3px;
+    border: 0.5px solid #aaa; }
+  .inputWithIcon i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    padding: 6px 8px;
+    color: #aaaaaa;
+    font-size: 16px; }
+
+.btn {
+  width: 100%;
+  height: 24px;
+  border: solid 0.5px #4ea5ff;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 3px;
+  color: #4ea5ff; }
+  .btn:hover {
+    background-color: #4ea5ff;
+    color: #fff;
+    cursor: pointer; }
 
 .test {
   border: solid 1px black; }

@@ -2,7 +2,8 @@
   width: 630px;
   height: 322px; }
   .modal-container .modal-body {
-    display: flex; }
+    display: flex;
+    background-color: #ffffff; }
     .modal-container .modal-body .info-container {
       width: 50%;
       background-color: #4ea5ff; }
@@ -24,5 +25,9 @@
           margin-top: 12px; }
     .modal-container .modal-body .login-form {
       width: 50%; }
+      .modal-container .modal-body .login-form .center .title {
+        margin-bottom: 8px; }
+      .modal-container .modal-body .login-form .center .line {
+        margin-bottom: 4px; }
 
 /*# sourceMappingURL=login.css.map */

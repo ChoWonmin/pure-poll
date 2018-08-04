@@ -8,3 +8,22 @@ $header-height: 114px
   -moz-box-shadow: 0 1px 8px 0 rgba(0,0,0,$opa), 0 3px 4px 0 rgba(0,0,0,$opa), 0 3px 3px -2px rgba(0,0,0,$opa)
   box-shadow: 0 1px 8px 0 rgba(0,0,0,$opa), 0 3px 4px 0 rgba(0,0,0,$opa), 0 3px 3px -2px rgba(0,0,0,$opa)
 
+@mixin button($width, $height)
+  width: $width
+  height: $height
+  border: solid .5px $sub-color
+  text-align: center
+  line-height: $height
+  border-radius: 3px
+  color: $sub-color
+  &:hover
+    background-color: $sub-color
+    color: #fff
+    cursor: pointer
+
+@mixin hover-name-action($color)
+  &:hover
+    color: lighten($color, 10)
+    cursor: pointer
+  &:active
+    color: darken($color, 10)

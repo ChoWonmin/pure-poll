@@ -1,7 +1,30 @@
 extends layout
 
 block content
-    link(rel='stylesheet', href='/stylesheets/login.css')
+    link(rel='stylesheet', href='/stylesheets/register.css')
+
+    .container
+        .left-view.center-wrapper
+            .title 어떤 것을 알아 보고 싶으세요?
+        .register-view.center-wrapper-vertical
+            .title 회원가입
+            .flex-wrapper
+                .sub-title 이미 회원이신가요?
+                .login-nav 로그인
+                i.material-icons.blue play_arrow
+            .register-selecter.flex-wrapper
+                .box-nav.center-wrapper-vertical
+                    i.material-icons person
+                    .title 개인 회원
+                    .sub-title 만 14세 이상 가능
+                    .btn 회원가입
+                .line
+                .box-nav.center-wrapper-vertical
+                    i.material-icons account_balance
+                    .title 기관 회원
+                    .sub-title 사업자 등록증을 보유한 기관회원
+                    .btn 회원가입
+
 
     .login-form
         .center-wrapper

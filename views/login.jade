@@ -15,14 +15,17 @@ html
         .login-form.center-wrapper
             .center
                 .title 아이디와 비밀번호를 입력해주세요
-                    .text ID
-                    input#id-input
-                .line.flex-wrapper
-                    .text password
-                    input#password-input(type='password')
-            .flex-wrapper
-                .flex-item
-                    .btn#login-btn login
+                .line
+                    .inputWithIcon
+                        input#id-input(placeholder='ID')
+                        i.material-icons mail
+                    .inputWithIcon
+                        input#password-input(placeholder='password', type='password')
+                        i.material-icons vpn_key
+                .line
+                    .result 로그인 하세요
+                .line
+                    .btn#login-btn 로그인
 
     link(rel='stylesheet', href='/stylesheets/login.css')
     script(src="/login.js")

@@ -1,0 +1,50 @@
+@import "global"
+
+.container
+  display: flex
+  height: calc(100vh - #{$header-height})
+  .left-view
+    flex: 4
+    background-color: $sub-color
+    .title
+      color: #fff
+      font-size: 24px
+      font-weight: bold
+  .register-view
+    flex: 6
+    .title
+      font-size: 24px
+    .sub-title
+      font-weight: bold
+    .flex-wrapper
+      margin-top: 20px
+      font-size: 20px
+      .login-nav
+        margin-left: 6px
+        color: $sub-color
+        font-weight: bold
+        @include hover-name-action($sub-color)
+      i.blue
+        color: $sub-color
+    .register-selecter
+      height: 330px
+      .box-nav
+        width: 300px
+        i
+          font-size: 100px
+        .title
+          margin-top: 36px
+          font-weight: bold
+        .sub-title
+          margin-top: 20px
+          font-size: 12px
+      .btn
+        margin-top: 20px
+        @include button(210px, 32px)
+      .line
+        border: solid .5px #707070
+
+
+
+.login-form
+  display: none

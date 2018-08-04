@@ -26,7 +26,7 @@ const Firebase = new function() {
 
     this.getAuth = () => auth;
 
-    this.getCurrentUser = () => auth.currentUser;
+
 }
 
 /* Firebase Test */

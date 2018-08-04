@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  height: calc(100vh - 114px); }
+  .container .left-view {
+    flex: 4;
+    background-color: #4ea5ff; }
+    .container .left-view .title {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold; }
+  .container .register-view {
+    flex: 6; }
+    .container .register-view .title {
+      font-size: 24px; }
+    .container .register-view .sub-title {
+      font-weight: bold; }
+    .container .register-view .flex-wrapper {
+      margin-top: 20px;
+      font-size: 20px; }
+      .container .register-view .flex-wrapper .login-nav {
+        margin-left: 6px;
+        color: #4ea5ff;
+        font-weight: bold; }
+        .container .register-view .flex-wrapper .login-nav:hover {
+          color: #81bfff;
+          cursor: pointer; }
+        .container .register-view .flex-wrapper .login-nav:active {
+          color: #1b8bff; }
+      .container .register-view .flex-wrapper i.blue {
+        color: #4ea5ff; }
+    .container .register-view .register-selecter {
+      height: 330px; }
+      .container .register-view .register-selecter .box-nav {
+        width: 300px; }
+        .container .register-view .register-selecter .box-nav i {
+          font-size: 100px; }
+        .container .register-view .register-selecter .box-nav .title {
+          margin-top: 36px;
+          font-weight: bold; }
+        .container .register-view .register-selecter .box-nav .sub-title {
+          margin-top: 20px;
+          font-size: 12px; }
+      .container .register-view .register-selecter .btn {
+        margin-top: 20px;
+        width: 210px;
+        height: 32px;
+        border: solid 0.5px #4ea5ff;
+        text-align: center;
+        line-height: 32px;
+        border-radius: 3px;
+        color: #4ea5ff; }
+        .container .register-view .register-selecter .btn:hover {
+          background-color: #4ea5ff;
+          color: #fff;
+          cursor: pointer; }
+      .container .register-view .register-selecter .line {
+        border: solid .5px #707070; }
+
+.login-form {
+  display: none; }
+
+/*# sourceMappingURL=register.css.map */

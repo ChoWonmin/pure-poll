@@ -3,11 +3,18 @@
 body
   margin: 0
   font: 12px "Nanum Gothic", sans-serif
+  background-color: #ccc
 
   .eng
     font-family: 'Lato', sans-serif
 *
   box-sizing: border-box
+
+.container
+  max-width: 1140px
+  margin: auto
+  margin-top: $header-height
+  background-color: #fff
 
 .flex-wrapper
   display: flex
@@ -18,14 +25,22 @@ body
   display: flex
   justify-content: center
   align-items: center
-  .center
+
+.center-wrapper-vertical
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
 
 .header
-  //position: fixed
   width: 100%
   height: $header-height
   padding: 33px 0 33px 39px
-  box-shadow: 5px 10px #fafafa
+  position: fixed
+  top: 0
+  overflow: hidden
+  background-color: #ffffff
   .content
     .logo
       width: 180px
@@ -38,7 +53,7 @@ body
         line-height: 60px
         font-size: 16px
     .btn-wrapper
-      .login-nav
+      .login-nav, .logout-nav
         width: 90px
         color: $main-color
         font-size: 16px
@@ -63,7 +78,6 @@ body
   height: 100%
   background-color: rgba(0, 0, 0, .5)
   transition: opacity .3s ease
-  //display: table
   display: none
   .modal-wrapper
     display: table-cell
@@ -77,6 +91,28 @@ body
       .modal-body
         width: 100%
         height: 100%
+
+.inputWithIcon
+  position: relative
+  height: 36px
+  input
+    padding-left: 32px
+    width: 100%
+    outline: none
+    height: 36px
+    border-radius: 3px
+    border: 0.5px solid #aaa
+  i
+    position: absolute
+    left: 0
+    top: 4px
+    padding: 6px 8px
+    color: #aaaaaa
+    font-size: 16px
+
+.btn
+  @include button(100%, 24px)
+
 .test
   border: solid 1px black
 
