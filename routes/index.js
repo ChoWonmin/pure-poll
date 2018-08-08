@@ -14,4 +14,8 @@ router.get('/login', function(req, res, next) {
     res.render('login');
 });
 
+router.get('/makePoll', function(req, res, next) {
+    res.render('makePoll');
+});
+
 module.exports = router;

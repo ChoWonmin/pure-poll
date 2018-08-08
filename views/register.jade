@@ -6,8 +6,8 @@ block content
     .container
         .left-view.center-wrapper
             .title 어떤 것을 알아 보고 싶으세요?
-        .register-view.center-wrapper-vertical
-            .title 회원가입
+        .register-view.right-view.center-wrapper-vertical
+            .main-title 회원가입
             .flex-wrapper
                 .sub-title 이미 회원이신가요?
                 .login-nav 로그인
@@ -17,14 +17,15 @@ block content
                     i.material-icons person
                     .title 개인 회원
                     .sub-title 만 14세 이상 가능
-                    .btn 회원가입
+                    #person-register.btn 회원가입
                 .line
                 .box-nav.center-wrapper-vertical
                     i.material-icons account_balance
                     .title 기관 회원
                     .sub-title 사업자 등록증을 보유한 기관회원
-                    .btn 회원가입
+                    #org-register.btn 회원가입
 
+        .person-form.right-view.center-wrapper-vertical
 
     .login-form
         .center-wrapper
@@ -52,7 +53,6 @@ block content
                 .btn#kakao-auth-btn kakao 인증
             .flex-item
                 .btn#register-btn register
-
 
     script(src="//developers.kakao.com/sdk/js/kakao.min.js")
     script(src="kakao.wrapper.js")

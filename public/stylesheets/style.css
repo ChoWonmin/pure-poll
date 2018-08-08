@@ -1,3 +1,20 @@
+.flex-wrapper {
+  display: flex; }
+  .flex-wrapper .col-12 {
+    flex: 12; }
+  .flex-wrapper .col-8 {
+    flex: 8; }
+  .flex-wrapper .col-6 {
+    flex: 6; }
+  .flex-wrapper .col-4 {
+    flex: 4; }
+  .flex-wrapper .col-3 {
+    flex: 3; }
+  .flex-wrapper .col-2 {
+    flex: 2; }
+  .flex-wrapper .col-1 {
+    flex: 1; }
+
 body {
   margin: 0;
   font: 12px "Nanum Gothic", sans-serif;
@@ -10,14 +27,8 @@ body {
 
 .container {
   max-width: 1140px;
-  margin: auto;
-  margin-top: 114px;
+  margin: 114px auto 0 auto;
   background-color: #fff; }
-
-.flex-wrapper {
-  display: flex; }
-  .flex-wrapper .flex-item {
-    flex: 1; }
 
 .center-wrapper {
   display: flex;

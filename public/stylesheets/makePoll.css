@@ -1,0 +1,213 @@
+@charset "UTF-8";
+.flex-wrapper {
+  display: flex; }
+  .flex-wrapper .col-12 {
+    flex: 12; }
+  .flex-wrapper .col-8 {
+    flex: 8; }
+  .flex-wrapper .col-6 {
+    flex: 6; }
+  .flex-wrapper .col-4 {
+    flex: 4; }
+  .flex-wrapper .col-3 {
+    flex: 3; }
+  .flex-wrapper .col-2 {
+    flex: 2; }
+  .flex-wrapper .col-1 {
+    flex: 1; }
+
+.container {
+  padding: 36px 12px;
+  height: calc(90vh - 114px);
+  background-color: transparent;
+  position: relative; }
+
+.tool-bar {
+  position: absolute;
+  background-color: #fff;
+  width: 40px;
+  right: 72px;
+  top: 36px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.4);
+  -moz-box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.4);
+  box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.4); }
+  .tool-bar .tool-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    color: black; }
+    .tool-bar .tool-btn:hover {
+      color: #81bfff;
+      cursor: pointer; }
+    .tool-bar .tool-btn:active {
+      color: #1b8bff; }
+    .tool-bar .tool-btn:nth-child(1) {
+      position: relative; }
+      .tool-bar .tool-btn:nth-child(1):hover::after {
+        position: absolute;
+        width: 72px;
+        text-align: center;
+        left: 130%;
+        content: "질문추가";
+        color: #ffffff;
+        padding: 4px;
+        border-radius: 4px;
+        background-color: rgba(50, 50, 50, 0.5); }
+    .tool-bar .tool-btn:nth-child(2) {
+      position: relative; }
+      .tool-bar .tool-btn:nth-child(2):hover::after {
+        position: absolute;
+        width: 72px;
+        text-align: center;
+        left: 130%;
+        content: "사진추가";
+        color: #ffffff;
+        padding: 4px;
+        border-radius: 4px;
+        background-color: rgba(50, 50, 50, 0.5); }
+    .tool-bar .tool-btn:nth-child(3) {
+      position: relative; }
+      .tool-bar .tool-btn:nth-child(3):hover::after {
+        position: absolute;
+        width: 72px;
+        text-align: center;
+        left: 130%;
+        content: "섹션추가";
+        color: #ffffff;
+        padding: 4px;
+        border-radius: 4px;
+        background-color: rgba(50, 50, 50, 0.5); }
+    .tool-bar .tool-btn:nth-child(4) {
+      position: relative; }
+      .tool-bar .tool-btn:nth-child(4):hover::after {
+        position: absolute;
+        width: 120px;
+        text-align: center;
+        left: 130%;
+        content: "제목 및 설명 추가";
+        color: #ffffff;
+        padding: 4px;
+        border-radius: 4px;
+        background-color: rgba(50, 50, 50, 0.5); }
+    .tool-bar .tool-btn:nth-child(5) {
+      position: relative; }
+      .tool-bar .tool-btn:nth-child(5):hover::after {
+        position: absolute;
+        width: 72px;
+        text-align: center;
+        left: 130%;
+        content: "미리보기";
+        color: #ffffff;
+        padding: 4px;
+        border-radius: 4px;
+        background-color: rgba(50, 50, 50, 0.5); }
+
+.form-wrapper {
+  background-color: #fff;
+  width: 980px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.4);
+  -moz-box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.4);
+  box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.4);
+  border-radius: 3px; }
+  .form-wrapper .form-header {
+    width: 100%;
+    font-weight: bold;
+    font-size: 32px;
+    -webkit-box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 4px 0 rgba(0, 0, 0, 0.12), 0 3px 3px -2px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 4px 0 rgba(0, 0, 0, 0.12), 0 3px 3px -2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 4px 0 rgba(0, 0, 0, 0.12), 0 3px 3px -2px rgba(0, 0, 0, 0.12); }
+  .form-wrapper .form-body {
+    border-left: solid #4ea5ff 2px;
+    padding: 12px; }
+    .form-wrapper .form-body .line {
+      margin-top: 12px; }
+      .form-wrapper .form-body .line .col-3 {
+        display: flex;
+        align-items: flex-end; }
+        .form-wrapper .form-body .line .col-3 i {
+          color: #aaa;
+          font-size: 32px;
+          margin-right: 12px; }
+
+.dropdown {
+  position: relative; }
+  .dropdown .dropdown-btn {
+    display: flex;
+    width: 132px;
+    height: 32px;
+    background-color: #4ea5ff;
+    color: #fff;
+    border-radius: 3px; }
+    .dropdown .dropdown-btn:hover {
+      background-color: #81bfff;
+      cursor: pointer; }
+    .dropdown .dropdown-btn:active {
+      background-color: #1b8bff; }
+    .dropdown .dropdown-btn .name {
+      text-align: center;
+      line-height: 32px; }
+    .dropdown .dropdown-btn i#dropdown-icon, .dropdown .dropdown-btn i#dropdown-arrow {
+      color: #fff;
+      margin: 0 8px; }
+    .dropdown .dropdown-btn:hover + .dropdown-content {
+      display: block; }
+  .dropdown .dropdown-content {
+    width: 140px;
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    top: 48px;
+    -webkit-box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 4px 0 rgba(0, 0, 0, 0.12), 0 3px 3px -2px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 4px 0 rgba(0, 0, 0, 0.12), 0 3px 3px -2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 4px 0 rgba(0, 0, 0, 0.12), 0 3px 3px -2px rgba(0, 0, 0, 0.12); }
+    .dropdown .dropdown-content .option {
+      display: flex;
+      color: #aaa;
+      height: 32px;
+      line-height: 32px; }
+      .dropdown .dropdown-content .option i#option-icon {
+        color: #aaa; }
+    .dropdown .dropdown-content .bottom-line {
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.12); }
+
+.input-area {
+  padding: 12px;
+  -webkit-box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 4px 0 rgba(0, 0, 0, 0.12), 0 3px 3px -2px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 4px 0 rgba(0, 0, 0, 0.12), 0 3px 3px -2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 4px 0 rgba(0, 0, 0, 0.12), 0 3px 3px -2px rgba(0, 0, 0, 0.12); }
+  .input-area input {
+    width: 100%;
+    height: 48px;
+    outline: none;
+    padding-left: 12px;
+    border: transparent;
+    font-weight: bold;
+    font-size: 32px; }
+  .input-area textarea {
+    width: 100%;
+    height: 60px;
+    outline: none;
+    padding-left: 12px;
+    border: transparent; }
+
+.question-area {
+  padding: 12px;
+  border-bottom: solid 2px #aaaaaa;
+  width: 480px; }
+  .question-area input {
+    width: 100%;
+    height: 32px;
+    outline: none;
+    padding-left: 12px;
+    border: transparent;
+    font-size: 24px; }
+  .question-area textarea {
+    width: 100%;
+    height: 60px;
+    outline: none;
+    padding-left: 12px;
+    border: transparent; }
+
+/*# sourceMappingURL=makePoll.css.map */

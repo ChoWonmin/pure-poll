@@ -12,26 +12,14 @@ body
 
 .container
   max-width: 1140px
-  margin: auto
-  margin-top: $header-height
+  margin: $header-height auto 0 auto
   background-color: #fff
 
-.flex-wrapper
-  display: flex
-  .flex-item
-    flex: 1
-
 .center-wrapper
-  display: flex
-  justify-content: center
-  align-items: center
+  @include align-center()
 
 .center-wrapper-vertical
-  display: flex
-  justify-content: center
-  align-items: center
-  flex-direction: column
-
+  @include align-vertical-center
 
 .header
   width: 100%
@@ -115,9 +103,3 @@ body
 
 .test
   border: solid 1px black
-
-
-
-
-
-

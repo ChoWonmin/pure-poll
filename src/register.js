@@ -53,6 +53,14 @@ const register = new function() {
             user['kakaoId'] = (await KakaoApp.requestAPI()).id;
         })
 
+        $('#person-register').click(function() {
+            alert('per');
+        });
+
+        $('#org-register').click(function() {
+            alert('org');
+        });
+
     }
 }
 register.addAction();

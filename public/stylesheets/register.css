@@ -8,39 +8,39 @@
       color: #fff;
       font-size: 24px;
       font-weight: bold; }
-  .container .register-view {
+  .container .right-view {
     flex: 6; }
-    .container .register-view .title {
+    .container .right-view .main-title {
       font-size: 24px; }
-    .container .register-view .sub-title {
+    .container .right-view .sub-title {
       font-weight: bold; }
-    .container .register-view .flex-wrapper {
+    .container .right-view .flex-wrapper {
       margin-top: 20px;
       font-size: 20px; }
-      .container .register-view .flex-wrapper .login-nav {
+      .container .right-view .flex-wrapper .login-nav {
         margin-left: 6px;
         color: #4ea5ff;
         font-weight: bold; }
-        .container .register-view .flex-wrapper .login-nav:hover {
+        .container .right-view .flex-wrapper .login-nav:hover {
           color: #81bfff;
           cursor: pointer; }
-        .container .register-view .flex-wrapper .login-nav:active {
+        .container .right-view .flex-wrapper .login-nav:active {
           color: #1b8bff; }
-      .container .register-view .flex-wrapper i.blue {
+      .container .right-view .flex-wrapper i.blue {
         color: #4ea5ff; }
-    .container .register-view .register-selecter {
+    .container .right-view .register-selecter {
       height: 330px; }
-      .container .register-view .register-selecter .box-nav {
+      .container .right-view .register-selecter .box-nav {
         width: 300px; }
-        .container .register-view .register-selecter .box-nav i {
+        .container .right-view .register-selecter .box-nav i {
           font-size: 100px; }
-        .container .register-view .register-selecter .box-nav .title {
+        .container .right-view .register-selecter .box-nav .title {
           margin-top: 36px;
           font-weight: bold; }
-        .container .register-view .register-selecter .box-nav .sub-title {
+        .container .right-view .register-selecter .box-nav .sub-title {
           margin-top: 20px;
           font-size: 12px; }
-      .container .register-view .register-selecter .btn {
+      .container .right-view .register-selecter .btn {
         margin-top: 20px;
         width: 210px;
         height: 32px;
@@ -49,14 +49,14 @@
         line-height: 32px;
         border-radius: 3px;
         color: #4ea5ff; }
-        .container .register-view .register-selecter .btn:hover {
+        .container .right-view .register-selecter .btn:hover {
           background-color: #4ea5ff;
           color: #fff;
           cursor: pointer; }
-      .container .register-view .register-selecter .line {
+      .container .right-view .register-selecter .line {
         border: solid .5px #707070; }
 
-.login-form {
+.login-form, .person-form {
   display: none; }
 
 /*# sourceMappingURL=register.css.map */
