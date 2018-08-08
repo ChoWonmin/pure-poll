@@ -1,0 +1,46 @@
+.drop-down
+  position : relative
+  height : 36px
+  font-size : 11px
+  padding-left : 30px
+  color: #707070
+  line-height: 36px
+  width : 100%
+  outline: none
+  border-radius: 3px
+  border: 0.5px solid #aaa
+  i
+    position: absolute
+    left: 0
+    top: 4px
+    padding: 6px 8px
+    color: #aaaaaa
+    font-size: 16px
+  .dropbtn
+    width: 28px
+    position: absolute
+    right : 3px
+    background-color: $sub-color
+    top: 3px
+    border-radius: 5px
+    padding: 6px
+    color: #ffffff
+    font-size: 16px
+    &:hover + .dropdown-content
+      display: block
+
+  .dropdown-content
+    display: none
+    position: absolute
+    width: 50%
+    right: 0%
+    border: solid $sub-color 1px
+    background-color: #ffffff
+    box-shadow: 0px 3px 1px 0px rgba(0,0,0,0.1)
+    z-index: 1
+
+.dropbtn:hover, .dropbtn:focus
+  background-color: $main-color
+
+.dropdown-content, .option:hover
+  background-color: #f1f1f1

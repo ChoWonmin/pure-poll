@@ -1,4 +1,5 @@
 @import "global"
+@import "lib/dropdown"
 
 body
   margin: 0
@@ -67,6 +68,7 @@ body
   background-color: rgba(0, 0, 0, .5)
   transition: opacity .3s ease
   display: none
+  z-index: 1
   .modal-wrapper
     display: table-cell
     vertical-align: middle
@@ -83,7 +85,7 @@ body
 .inputWithIcon
   position: relative
   height: 36px
-  input
+  input[type='text'], input[type='password']
     padding-left: 32px
     width: 100%
     outline: none
@@ -97,6 +99,15 @@ body
     padding: 6px 8px
     color: #aaaaaa
     font-size: 16px
+
+input[type='file']
+  padding : 3px
+  width: 100%
+  outline: none
+  height: 24px
+  border-radius: 3px
+  border: 0.5px solid #aaa
+
 
 .btn
   @include button(100%, 24px)

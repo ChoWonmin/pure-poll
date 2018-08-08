@@ -1,0 +1,68 @@
+extends layout
+
+block content
+    link(rel='stylesheet', href='/stylesheets/registerOrg.css')
+
+    .container
+        .left-view.center-wrapper
+            .title 어떤 것을 알아 보고 싶으세요?
+        .register-view.center-wrapper-vertical
+            .title 여론조사자 회원가입
+            .flex-wrapper
+                .sub-title 이미 회원이신가요?
+                .login-nav 로그인
+                i.material-icons.blue play_arrow
+            .liner
+                .line_horizontal
+                .line-title 계정 만들기
+                .line_horizontal
+            .input_container.flex-wrapper
+                .box-nav
+                    .inputWithIcon
+                        input#id-input(placeholder='이메일', type='text')
+                        i.material-icons mail
+                        .input-btn
+                    .error-box 중복된 이메일 입니다.
+                    .inputWithIcon
+                        input#password-input(placeholder='패스워드', type='password')
+                        i.material-icons lock
+                    .error-box 10자리 이상 입력해주세요.
+                    .inputWithIcon
+                        input#repassword-input(placeholder='다시 한 번 입력해주세요', type='password')
+                        i.material-icons lock
+                    .error-box 10자리 이상 입력해주세요.
+
+                    .drop-down 사업자 분류
+                        .dropbtn.material-icons#business arrow_downward
+                        a.dropdown-content#a
+                            .option 개인 사업자
+                            .option 공공 기관
+                            .option 국가 기관
+                        i.material-icons location_on
+                    .error-box 필수 항목입니다.
+
+                    .inputWithIcon
+                        input(placeholder='사업자 등록증 업로드', type='text', disabled=true)
+                        i.material-icons add_a_photo
+                    input#business-img( type='file')
+                    .error-box 필수 항목입니다.
+
+                    .inputWithIcon
+                        input#phone(placeholder='연락처를 입력해주세요', type='text')
+                        i.material-icons call
+                    .error-box 필수 항목입니다.
+
+                .line_vertical
+                .box-nav.center-wrapper-vertical
+                    .title 조사자 가입 안내
+                    .sub-title 여론조사자 가입은 여론조사 관계 법령에 의거해 아래와 같은 절차가 확인이 되면 회원가입이 진행됩니다.
+                    .sub-box.center-wrapper 사업자 등록 확인
+                    i.material-icons arrow_downward
+                    .sub-box.center-wrapper 여론조사 기관 등록 확인
+                    i.material-icons arrow_downward
+                    .sub-box.center-wrapper 대표기관 전화 확인
+                    i.material-icons arrow_downward
+                    .sub-box.center-wrapper 회원가입 완료
+
+
+    script(src='/registerOrg.js')
