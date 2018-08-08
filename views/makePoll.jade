@@ -29,7 +29,7 @@ block content
                     .col-1
                     .col-3
                         i.material-icons photo
-                        .dropdown
+                        #question-dropdown.dropdown
                             .dropdown-btn
                                 i.material-icons#dropdown-icon short_text
                                 .name 단답형
@@ -42,10 +42,10 @@ block content
                                     i.material-icons.option-icon notes
                                     .name 장문형
                                 .option
-                                    i.material-icons.option-icon short_text
-                                    .name 객관식 질문
+                                    i.material-icons.option-icon radio_button_checked
+                                    .name 객관식
                                 .option
-                                    i.material-icons.option-icon short_text
+                                    i.material-icons.option-icon check_box
                                     .name 체크박스
                                 .option.bottom-shadow
                                     i.material-icons.option-icon notes
@@ -53,9 +53,10 @@ block content
 
 
                 .line.flex-wrapper
-                    .col-1
+                    .col-8
                         .question-area
                             input(placeholder='답안')
-                    .col-2
+                    .col-4
 
-
+    script(src='/component/dropdown.js')
+    script(src='/makePoll.js')

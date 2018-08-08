@@ -1,4 +1,5 @@
 @import "global"
+@import "./lib/dropdown"
 
 .container
   padding: 36px 12px
@@ -54,45 +55,6 @@
           color: $black-color
           font-size: 32px
           margin-right: 12px
-
-.dropdown
-  position: relative
-  .dropdown-btn
-    display: flex
-    width: 132px
-    height: 32px
-    background-color: $sub-color
-    color: #fff
-    border-radius: 3px
-    @include button-action($sub-color)
-    .name
-      text-align: center
-      line-height: 32px
-    i#dropdown-icon, i#dropdown-arrow
-      color: #fff
-      margin: 0 8px
-  &:hover + .dropdown-content
-    display: block
-
-  .dropdown-content
-    width: 140px
-    display: none
-    position: absolute
-    background-color: #ffffff
-    top: 48px
-    @include shadow(.12)
-    .option
-      display: flex
-      color: $black-color
-      height: 32px
-      line-height: 32px
-      i#option-icon
-        color: $black-color
-    .bottom-shadow
-      @include bottom-shadow(.12)
-
-
-
 
 .input-area
   padding: 12px

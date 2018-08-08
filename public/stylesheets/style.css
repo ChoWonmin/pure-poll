@@ -15,6 +15,49 @@
   .flex-wrapper .col-1 {
     flex: 1; }
 
+.flex-wrapper {
+  display: flex; }
+  .flex-wrapper .col-12 {
+    flex: 12; }
+  .flex-wrapper .col-8 {
+    flex: 8; }
+  .flex-wrapper .col-6 {
+    flex: 6; }
+  .flex-wrapper .col-4 {
+    flex: 4; }
+  .flex-wrapper .col-3 {
+    flex: 3; }
+  .flex-wrapper .col-2 {
+    flex: 2; }
+  .flex-wrapper .col-1 {
+    flex: 1; }
+
+.inputWithIcon {
+  position: relative;
+  height: 36px; }
+  .inputWithIcon input[type='text'], .inputWithIcon input[type='password'] {
+    padding-left: 32px;
+    width: 100%;
+    outline: none;
+    height: 36px;
+    border-radius: 3px;
+    border: 0.5px solid #aaa; }
+  .inputWithIcon i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    padding: 6px 8px;
+    color: #aaaaaa;
+    font-size: 16px; }
+
+input[type='file'] {
+  padding: 3px;
+  width: 100%;
+  outline: none;
+  height: 24px;
+  border-radius: 3px;
+  border: 0.5px solid #aaa; }
+
 body {
   margin: 0;
   font: 12px "Nanum Gothic", sans-serif;
@@ -85,7 +128,8 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   transition: opacity .3s ease;
-  display: none; }
+  display: none;
+  z-index: 1; }
   .modal-mask .modal-wrapper {
     display: table-cell;
     vertical-align: middle; }
@@ -98,24 +142,6 @@ body {
       .modal-mask .modal-wrapper .modal-container .modal-body {
         width: 100%;
         height: 100%; }
-
-.inputWithIcon {
-  position: relative;
-  height: 36px; }
-  .inputWithIcon input {
-    padding-left: 32px;
-    width: 100%;
-    outline: none;
-    height: 36px;
-    border-radius: 3px;
-    border: 0.5px solid #aaa; }
-  .inputWithIcon i {
-    position: absolute;
-    left: 0;
-    top: 4px;
-    padding: 6px 8px;
-    color: #aaaaaa;
-    font-size: 16px; }
 
 .btn {
   width: 100%;

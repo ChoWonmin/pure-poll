@@ -1,0 +1,39 @@
+@import "../global"
+
+.dropdown
+  position: relative
+  .dropdown-btn
+    display: flex
+    height: 32px
+    background-color: $sub-color
+    color: #fff
+    border-radius: 3px
+    @include button-action($sub-color)
+    .name
+      width: 92px
+      text-align: center
+      line-height: 32px
+    i#dropdown-icon, i#dropdown-arrow
+      color: #fff
+      margin: 0 8px
+
+  .dropdown-content
+    width: 140px
+    display: none
+    position: absolute
+    background-color: #ffffff
+    top: 48px
+    @include shadow(.12)
+    .option
+      display: flex
+      color: $black-color
+      height: 32px
+      line-height: 32px
+      &:hover
+        background-color: darken(#fff, 20)
+      i.option-icon
+        color: $black-color
+        font-size: 24px
+        line-height: 32px
+    .bottom-shadow
+      @include bottom-shadow(.12)

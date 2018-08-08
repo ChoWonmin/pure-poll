@@ -1,4 +1,6 @@
 @import "global"
+@import "./lib/grid"
+@import "./lib/input"
 
 body
   margin: 0
@@ -67,6 +69,7 @@ body
   background-color: rgba(0, 0, 0, .5)
   transition: opacity .3s ease
   display: none
+  z-index: 1
   .modal-wrapper
     display: table-cell
     vertical-align: middle
@@ -80,23 +83,7 @@ body
         width: 100%
         height: 100%
 
-.inputWithIcon
-  position: relative
-  height: 36px
-  input
-    padding-left: 32px
-    width: 100%
-    outline: none
-    height: 36px
-    border-radius: 3px
-    border: 0.5px solid #aaa
-  i
-    position: absolute
-    left: 0
-    top: 4px
-    padding: 6px 8px
-    color: #aaaaaa
-    font-size: 16px
+
 
 .btn
   @include button(100%, 24px)

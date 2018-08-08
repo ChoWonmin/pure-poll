@@ -58,7 +58,7 @@ const register = new function() {
         });
 
         $('#org-register').click(function() {
-            alert('org');
+            location.href='/registerOrg';
         });
 
     }
