@@ -3,6 +3,7 @@ const Dropdown = function(id) {
 
     $('body').click(() => {
         rootEle.find('.dropdown-content').css('display','none');
+        rootEle.find('.dropdown-btn > #dropdown-icon').removeClass('rotate-icon');
     });
 
     rootEle.find('.dropdown-btn').click(event => {
@@ -12,6 +13,8 @@ const Dropdown = function(id) {
         visible = (visible==='none')?'block':'none';
 
         rootEle.find('.dropdown-content').css('display',visible);
+
+        rootEle.find('.dropdown-btn > #dropdown-icon').removeClass('rotate-icon');
     });
 
     this.clickAction = function(action) {
@@ -21,6 +24,7 @@ const Dropdown = function(id) {
             const option = $(this).find('.name').text();
             const icon = $(this).find('i').text();
 
+            rootEle.find('.dropdown-btn > #dropdown-icon').addClass('rotate-icon');
             rootEle.find('.dropdown-btn > #dropdown-icon').text(icon);
             rootEle.find('.dropdown-btn > .name').text(option);
 

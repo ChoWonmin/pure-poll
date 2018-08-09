@@ -1,11 +1,11 @@
 @import "../global"
 
 .tool-bar
-  position: absolute
+  position: fixed
   background-color: #fff
   width: 40px
-  right: 72px
-  top: 36px
+  top: calc(#{$header-height + 60px})
+  right: 224px
   border-radius: 3px
   @include card-box-shadow()
   .tool-btn

@@ -17,6 +17,11 @@ $header-height: 114px
   -moz-box-shadow: 0 1px 0px 0 rgba(0,0,0,$opa)
   box-shadow: 0 1px 0 rgba(0,0,0,$opa)
 
+@mixin active-shadow($opa)
+  -webkit-box-shadow: 0 1px 0px 0 rgba(0,0,0,$opa)
+  -moz-box-shadow: 0 1px 0px 0 rgba(0,0,0,$opa)
+  box-shadow: 0 1px 0 rgba(255,255,255,$opa)
+
 @mixin nav-shadow
   box-shadow: rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px, rgba(0, 0, 0, 0.2) 0px 2px 4px -1px
 

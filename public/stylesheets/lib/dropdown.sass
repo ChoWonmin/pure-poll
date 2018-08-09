@@ -1,5 +1,8 @@
 @import "../global"
 
+.rotate-icon
+  transform: rotate(180deg)
+
 .dropdown
   position: relative
   .dropdown-btn
@@ -13,10 +16,12 @@
       width: 92px
       text-align: center
       line-height: 32px
-    #dropdown-icon, #dropdown-arrow
+    .dropdown-icon, .dropdown-arrow
       line-height: 32px
       color: #fff
       margin: 0 8px
+    .dropdown-arrow
+      transition: all 0.3s ease-in-out
 
   .dropdown-content
     z-index: 1

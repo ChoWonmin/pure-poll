@@ -8,7 +8,12 @@
   padding: 36px 12px
   height: calc(90vh - #{$header-height})
   background-color: transparent
-  position: relative
+
+.selected
+  &:hover
+    border: solid 3px $sub-color
+    @include active-shadow(0.5)
+
 
 .tool-bar
   .tool-btn
@@ -24,10 +29,14 @@
       @include tooltip('미리보기', 72px)
 
 .form-wrapper
+  transition: all 0.3s ease-in-out
+  margin-top: 24px
   background-color: #fff
   width: 980px
   @include card-box-shadow()
   border-radius: 3px
+  &:hover
+    border: solid 2px $sub-color
   .form-header
     width: 100%
     font-weight: bold
