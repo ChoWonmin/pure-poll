@@ -1,3 +1,84 @@
+.flex-wrapper {
+  display: flex; }
+  .flex-wrapper .col-12 {
+    flex: 12; }
+  .flex-wrapper .col-8 {
+    flex: 8; }
+  .flex-wrapper .col-6 {
+    flex: 6; }
+  .flex-wrapper .col-4 {
+    flex: 4; }
+  .flex-wrapper .col-3 {
+    flex: 3; }
+  .flex-wrapper .col-2 {
+    flex: 2; }
+  .flex-wrapper .col-1 {
+    flex: 1; }
+
+.inputWithIcon {
+  position: relative;
+  height: 36px; }
+  .inputWithIcon input[type='text'], .inputWithIcon input[type='password'] {
+    padding-left: 32px;
+    width: 100%;
+    outline: none;
+    height: 36px;
+    border-radius: 3px;
+    border: 0.5px solid #aaa; }
+  .inputWithIcon i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    padding: 6px 8px;
+    color: #aaaaaa;
+    font-size: 16px; }
+
+input[type='file'] {
+  padding: 3px;
+  width: 100%;
+  outline: none;
+  height: 24px;
+  border-radius: 3px;
+  border: 0.5px solid #aaa; }
+
+.input-area {
+  padding: 12px;
+  -webkit-box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 4px 0 rgba(0, 0, 0, 0.12), 0 3px 3px -2px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 4px 0 rgba(0, 0, 0, 0.12), 0 3px 3px -2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 4px 0 rgba(0, 0, 0, 0.12), 0 3px 3px -2px rgba(0, 0, 0, 0.12); }
+  .input-area input {
+    width: 100%;
+    height: 48px;
+    outline: none;
+    padding-left: 12px;
+    border: transparent;
+    font-weight: bold;
+    font-size: 32px; }
+  .input-area textarea {
+    width: 100%;
+    height: 60px;
+    outline: none;
+    padding-left: 12px;
+    border: transparent; }
+
+.question-area {
+  padding: 12px;
+  border-bottom: solid 2px #aaaaaa;
+  width: 480px; }
+  .question-area input {
+    width: 100%;
+    height: 32px;
+    outline: none;
+    padding-left: 12px;
+    border: transparent;
+    font-size: 24px; }
+  .question-area textarea {
+    width: 100%;
+    height: 60px;
+    outline: none;
+    padding-left: 12px;
+    border: transparent; }
+
 .container {
   display: flex;
   height: calc(100vh - 114px); }

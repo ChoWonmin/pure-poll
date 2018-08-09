@@ -25,6 +25,8 @@ const Dropdown = function(id) {
             rootEle.find('.dropdown-btn > .name').text(option);
 
             action(option);
+
+
         });
     };
 

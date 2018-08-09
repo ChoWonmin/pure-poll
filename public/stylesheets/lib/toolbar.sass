@@ -1,0 +1,15 @@
+@import "../global"
+
+.tool-bar
+  position: absolute
+  background-color: #fff
+  width: 40px
+  right: 72px
+  top: 36px
+  border-radius: 3px
+  @include card-box-shadow()
+  .tool-btn
+    @include align-center()
+    @include hover-name-action($sub-color)
+    height: 32px
+    color: black

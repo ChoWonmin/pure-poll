@@ -13,16 +13,18 @@
       width: 92px
       text-align: center
       line-height: 32px
-    i#dropdown-icon, i#dropdown-arrow
+    #dropdown-icon, #dropdown-arrow
+      line-height: 32px
       color: #fff
       margin: 0 8px
 
   .dropdown-content
-    width: 140px
+    z-index: 1
+    width: 100%
     display: none
     position: absolute
     background-color: #ffffff
-    top: 48px
+    top: 40px
     @include shadow(.12)
     .option
       display: flex
@@ -31,9 +33,9 @@
       line-height: 32px
       &:hover
         background-color: darken(#fff, 20)
-      i.option-icon
-        color: $black-color
+      .option-icon
         font-size: 24px
+        margin: 0 12px 0 8px
         line-height: 32px
     .bottom-shadow
       @include bottom-shadow(.12)

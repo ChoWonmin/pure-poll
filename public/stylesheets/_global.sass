@@ -13,8 +13,8 @@ $header-height: 114px
   box-shadow: 0 1px 8px 0 rgba(0,0,0,$opa), 0 3px 4px 0 rgba(0,0,0,$opa), 0 3px 3px -2px rgba(0,0,0,$opa)
 
 @mixin bottom-shadow($opa)
-  //-webkit-box-shadow: 0 3px 0px 0 rgba(0,0,0,$opa)
-  //-moz-box-shadow: 0 3px 0px 0 rgba(0,0,0,$opa)
+  -webkit-box-shadow: 0 1px 0px 0 rgba(0,0,0,$opa)
+  -moz-box-shadow: 0 1px 0px 0 rgba(0,0,0,$opa)
   box-shadow: 0 1px 0 rgba(0,0,0,$opa)
 
 @mixin nav-shadow
@@ -53,28 +53,7 @@ $header-height: 114px
   &:active
     color: darken($color, 10)
 
-@mixin line-input($width, $height)
-  width: $width
-  height: $height
-  outline: none
-  padding-left: 12px
-  border: transparent
-
 @mixin bold()
   font-weight: bold
-
-@mixin tooltip($content, $width)
-  position: relative
-  &:hover
-    &::after
-      position: absolute
-      width: $width
-      text-align: center
-      left: 130%
-      content: $content
-      color: #ffffff
-      padding: 4px
-      border-radius: 4px
-      background-color: rgba(50,50,50,0.5)
 
 

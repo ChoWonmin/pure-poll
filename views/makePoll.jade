@@ -3,16 +3,16 @@ extends layout
 block content
     link(rel='stylesheet', href='/stylesheets/makePoll.css')
     .container
-        .tool-bar
-            .tool-btn
+        #pool-toolbar.tool-bar
+            .tool-btn(name='addQuestion')
                 i.material-icons playlist_add
-            .tool-btn
+            .tool-btn(name='addPhoto')
                 i.material-icons add_a_photo
-            .tool-btn
+            .tool-btn(name='addSection')
                 i.material-icons playlist_add
-            .tool-btn
+            .tool-btn(name='addTitle')
                 i.material-icons playlist_add
-            .tool-btn
+            .tool-btn(name='preview')
                 i.material-icons playlist_add
 
         .form-wrapper
@@ -28,7 +28,7 @@ block content
                             input(placeholder='질문')
                     .col-1
                     .col-3
-                        i.material-icons photo
+                        i.material-icons.img-upload-btn photo
                         #question-dropdown.dropdown
                             .dropdown-btn
                                 i.material-icons#dropdown-icon short_text
@@ -59,4 +59,5 @@ block content
                     .col-4
 
     script(src='/component/dropdown.js')
+    script(src='/component/toolbar.js')
     script(src='/makePoll.js')

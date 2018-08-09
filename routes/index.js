@@ -22,4 +22,9 @@ router.get('/makePoll', function(req, res, next) {
     res.render('makePoll');
 });
 
+router.get('/registerOrg', function(req, res, next) {
+    res.render('registerOrg');
+});
+
+
 module.exports = router;

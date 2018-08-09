@@ -1,3 +1,10 @@
+@mixin line-input($width, $height)
+  width: $width
+  height: $height
+  outline: none
+  padding-left: 12px
+  border: transparent
+
 .inputWithIcon
   position: relative
   height: 36px
@@ -23,3 +30,23 @@ input[type='file']
   height: 24px
   border-radius: 3px
   border: 0.5px solid #aaa
+
+.input-area
+  padding: 12px
+  @include shadow(.12)
+  input
+    @include line-input(100%, 48px)
+    @include bold
+    font-size: 32px
+  textarea
+    @include line-input(100%, 60px)
+
+.question-area
+  padding: 12px
+  border-bottom: solid 2px #aaaaaa
+  width: 480px
+  input
+    @include line-input(100%, 32px)
+    font-size: 24px
+  textarea
+    @include line-input(100%, 60px)
