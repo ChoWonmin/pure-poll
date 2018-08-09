@@ -181,7 +181,7 @@ input[type='file'] {
     justify-content: center;
     align-items: center;
     height: 32px;
-    color: black; }
+    color: #aaa; }
     .tool-bar .tool-btn:hover {
       color: #81bfff;
       cursor: pointer; }
@@ -229,19 +229,6 @@ input[type='file'] {
   position: relative; }
   .tool-bar .tool-btn:nth-child(3):hover::after {
     position: absolute;
-    width: 72px;
-    text-align: center;
-    left: 130%;
-    content: "섹션추가";
-    color: #ffffff;
-    padding: 4px;
-    border-radius: 4px;
-    background-color: rgba(50, 50, 50, 0.5); }
-
-.tool-bar .tool-btn:nth-child(4) {
-  position: relative; }
-  .tool-bar .tool-btn:nth-child(4):hover::after {
-    position: absolute;
     width: 120px;
     text-align: center;
     left: 130%;
@@ -251,9 +238,9 @@ input[type='file'] {
     border-radius: 4px;
     background-color: rgba(50, 50, 50, 0.5); }
 
-.tool-bar .tool-btn:nth-child(5) {
+.tool-bar .tool-btn:nth-child(4) {
   position: relative; }
-  .tool-bar .tool-btn:nth-child(5):hover::after {
+  .tool-bar .tool-btn:nth-child(4):hover::after {
     position: absolute;
     width: 72px;
     text-align: center;
@@ -273,8 +260,6 @@ input[type='file'] {
   -moz-box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.4);
   box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.4);
   border-radius: 3px; }
-  .form-wrapper:hover {
-    border: solid 2px #4ea5ff; }
   .form-wrapper .form-header {
     width: 100%;
     font-weight: bold;
@@ -284,9 +269,10 @@ input[type='file'] {
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 4px 0 rgba(0, 0, 0, 0.12), 0 3px 3px -2px rgba(0, 0, 0, 0.12); }
   .form-wrapper .form-body {
     border-left: solid #4ea5ff 2px;
-    padding: 12px; }
+    padding: 12px 0; }
     .form-wrapper .form-body .line {
-      margin-top: 12px; }
+      margin-top: 12px;
+      padding: 0 12px; }
       .form-wrapper .form-body .line .col-3 {
         display: flex;
         align-items: flex-end; }
@@ -294,5 +280,8 @@ input[type='file'] {
           color: #aaa;
           font-size: 32px;
           margin-right: 12px; }
+    .form-wrapper .form-body .line + .bottom {
+      padding-bottom: 12px;
+      border-bottom: solid 1px #aaa; }
 
 /*# sourceMappingURL=makePoll.css.map */

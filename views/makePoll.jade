@@ -8,12 +8,10 @@ block content
                 i.material-icons playlist_add
             .tool-btn(name='addPhoto')
                 i.material-icons add_a_photo
-            .tool-btn(name='addSection')
-                i.material-icons playlist_add
             .tool-btn(name='addTitle')
-                i.material-icons playlist_add
+                i.material-icons add_comment
             .tool-btn(name='preview')
-                i.material-icons playlist_add
+                i.material-icons search
 
         .form-wrapper
             .form-header
@@ -50,57 +48,11 @@ block content
                                 .option.bottom-shadow
                                     i.material-icons.option-icon notes
                                     .name 드롭다운
-                .line.flex-wrapper
+                .line.flex-wrapper.bottom
                     .col-8
                         .question-area
                             input(placeholder='답안')
                     .col-4
-
-        .form-wrapper
-            .form-header
-                .input-area
-                    input(placeholder='설문지 이름을 입력하세요').bold
-                .input-area
-                    textarea(placeholder='설문지 설명')
-            .form-body
-                .line.flex-wrapper
-                    .col-8
-                        .question-area
-                            input(placeholder='질문')
-                    .col-1
-                    .col-3
-                        i.material-icons.img-upload-btn photo
-                        #question-dropdown2.dropdown
-                            .dropdown-btn
-                                i.material-icons.dropdown-icon short_text
-                                .name 단답형
-                                i.material-icons.dropdown-arrow keyboard_arrow_down
-                            .dropdown-content
-                                .option
-                                    i.material-icons.option-icon short_text
-                                    .name 단답형
-                                .option.bottom-shadow
-                                    i.material-icons.option-icon notes
-                                    .name 장문형
-                                .option
-                                    i.material-icons.option-icon radio_button_checked
-                                    .name 객관식
-                                .option
-                                    i.material-icons.option-icon check_box
-                                    .name 체크박스
-                                .option.bottom-shadow
-                                    i.material-icons.option-icon notes
-                                    .name 드롭다운
-
-
-                .line.flex-wrapper
-                    .col-8
-                        .question-area
-                            textarea(placeholder='답안')
-                    .col-4
-
-
-
 
     script(src='/component/dropdown.js')
     script(src='/component/toolbar.js')

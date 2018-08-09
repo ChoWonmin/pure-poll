@@ -1,21 +1,17 @@
-const MakePoll = function() {
+const PoolForm = function() {
 
     const dropdowns = [];
     const toolbar = new Toolbar('#pool-toolbar');
 
-    toolbar.clickAction(function(text) {
-        console.log(text);
-
-        if(text==='addQuestion') {
-
-        }
-
-    })
-
-};
-
-const Form = function() {
-
+    let $body = $('.form-body');
+    const $title = $(`<div class="form-header">
+  <div class="input-area">
+    <input placeholder="제목" class="bold"/>
+  </div>
+  <div class="input-area">
+    <textarea placeholder="설명"></textarea>
+  </div>
+</div>`);
     const $question = $(`<div class="line flex-wrapper">
   <div class="col-8">
     <div class="question-area">
@@ -48,7 +44,7 @@ const Form = function() {
     </div>
   </div>
 </div>`);
-    const $shortRes = $(`<div class="line flex-wrapper">
+    const $shortRes = $(`<div class="line flex-wrapper bottom">
   <div class="col-8">
     <div class="question-area">
       <input placeholder="답안"/>
@@ -56,7 +52,7 @@ const Form = function() {
   </div>
   <div class="col-4"></div>
 </div>`);
-    const $longRes = $(`<div class="line flex-wrapper">
+    const $longRes = $(`<div class="line flex-wrapper bottom">
   <div class="col-8">
     <div class="question-area">
       <textara placeholder="답안"/>
@@ -65,9 +61,25 @@ const Form = function() {
   <div class="col-4"></div>
 </div>`);
 
+    dropdowns.push(new Dropdown('#question-dropdown1'))
     dropdowns[dropdowns.length-1].clickAction(function(text) {
         console.log(text);
     });
-}
 
-const makePoll = new MakePoll();
+    toolbar.clickAction(function(text) {
+
+        if(text==='addQuestion') {
+            $body.append($question.clone());
+            $body.append($shortRes.clone());
+        } else if(text==='addPhoto') {
+
+        } else if(text==='addTitle') {
+            $body.append($title.clone());
+        } else if(text==='preview') {
+
+        }
+
+    })
+};
+
+const poolForm = new PoolForm();

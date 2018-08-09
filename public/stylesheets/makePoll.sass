@@ -22,10 +22,8 @@
     &:nth-child(2)
       @include tooltip('사진추가', 72px)
     &:nth-child(3)
-      @include tooltip('섹션추가', 72px)
-    &:nth-child(4)
       @include tooltip('제목 및 설명 추가', 120px)
-    &:nth-child(5)
+    &:nth-child(4)
       @include tooltip('미리보기', 72px)
 
 .form-wrapper
@@ -35,8 +33,6 @@
   width: 980px
   @include card-box-shadow()
   border-radius: 3px
-  &:hover
-    border: solid 2px $sub-color
   .form-header
     width: 100%
     font-weight: bold
@@ -44,11 +40,11 @@
     @include shadow(.12)
   .form-body
     border-left: solid $sub-color 2px
-    padding: 12px
+    padding: 12px 0
     .line
       margin-top: 12px
+      padding: 0 12px
       .col-8
-
       .col-3
         display: flex
         align-items: flex-end
@@ -56,5 +52,8 @@
           color: $black-color
           font-size: 32px
           margin-right: 12px
+    .line + .bottom
+      padding-bottom: 12px
+      border-bottom: solid 1px $black-color
 
 
