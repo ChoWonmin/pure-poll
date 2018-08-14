@@ -24,17 +24,14 @@ const Item = function(ind) {
         <div class="option"><i class="material-icons option-icon">radio_button_checked</i>
           <div class="name">객관식</div>
         </div>
-        <div class="option"><i class="material-icons option-icon">check_box</i>
+        <div class="option bottom-shadow"><i class="material-icons option-icon">check_box</i>
           <div class="name">체크박스</div>
-        </div>
-        <div class="option bottom-shadow"><i class="material-icons option-icon">notes</i>
-          <div class="name">드롭다운</div>
         </div>
       </div>
     </div>
   </div>
 </div>`);
-    this.$shortRes = $(`<div class="line flex-wrapper bottom">
+    this.$shortRes = $(`<div class="line flex-wrapper bottom response">
   <div class="col-8">
     <div class="question-area">
       <input placeholder="답안"/>
@@ -42,9 +39,17 @@ const Item = function(ind) {
   </div>
   <div class="col-4"></div>
 </div>`);
-    this.$longRes = $(`<div class="line flex-wrapper bottom">
+    this.$longRes = $(`<div class="line flex-wrapper bottom response">
   <div class="col-8">
     <div class="question-area">
+      <textarea placeholder="답안"/>
+    </div>
+  </div>
+  <div class="col-4"></div>
+</div>`);
+    this.$choiceRes = $(`<div class="line flex-wrapper bottom response">
+  <div class="col-8">
+    <div class="choice-area">
       <textarea placeholder="답안"/>
     </div>
   </div>
@@ -67,11 +72,11 @@ const Item = function(ind) {
                 this.currentOption=option;
 
             if(option==='단답형') {
-                this.$root.empty();
-                this.$root.append(this.$question).append(this.$shortRes);
+                this.$root.children('.response').remove();
+                this.$root.append(this.$shortRes);
             } else if(option==='장문형') {
-                this.$root.empty();
-                this.$root.append(this.$question).append(this.$longRes);
+                this.$root.children('.response').remove();
+                this.$root.append(this.$longRes);
             }
 
         });

@@ -1,5 +1,6 @@
 @import "global"
 @import "./lib/input"
+@import "./lib/dropdown"
 
 .container
   display: flex
@@ -19,7 +20,6 @@
       font-weight: bold
     .flex-wrapper
       margin-top: 20px
-      font-size: 20px
       .login-nav
         margin-left: 6px
         color: $sub-color
@@ -41,28 +41,45 @@
       height: 600px
       .box-nav
         width: 300px
+
+        .dropdown
+          .dropdown-btn
+            border: solid .5px $sub-color
+            background-color: #fff
+            color: $sub-color
+            .dropdown-icon, .dropdown-arrow
+              color: $sub-color
+          .dropdown-content
+            .option:hover
+              background-color: $sub-color
+              .option-icon, .name
+                color: #fff
+
         .title
-          font-size : 20px
+          font-size: 20px
           font-weight: bold
         .sub-title
-          font-size : 12px
-          margin : 10px
+          font-size: 12px
+          margin: 10px
           font-weight: normal
         .sub-box
-          color : $sub-color
-          margin : 5px
-          width : 200px
+          color: $sub-color
+          margin: 5px
+          width: 200px
           height: 32px
-          font-size : 15px
+          font-size: 15px
           line-height: 32px
           border: solid 1px $sub-color
           @include shadow(0.08)
       .error-box
+        height : 24px
         font-size: 10px
-        color : $error-color
-        margin : 10px
+        line-height: 24px
 
-      .line_vertical
-        margin-left: 20px
-        margin-right: 20px
-        border: solid .5px #707070
+.line_vertical
+  height : 100%
+  margin : 20px
+  border: solid .5px #707070
+
+//.login-form
+//  display: none

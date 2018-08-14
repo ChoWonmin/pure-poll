@@ -42,11 +42,17 @@ input[type='file']
     @include line-input(100%, 60px)
 
 .question-area
+  display: flex
   padding: 12px
   border-bottom: solid 2px #aaaaaa
   width: 480px
+  input[type='radio']
+    width: 30px
   input
     @include line-input(100%, 32px)
     font-size: 24px
   textarea
     @include line-input(100%, 60px)
+
+
+

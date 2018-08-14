@@ -15,6 +15,14 @@
   .flex-wrapper .col-1 {
     flex: 1; }
 
+.success {
+  color: #00aa00;
+  font-weight: bold; }
+
+.error {
+  color: darkorange;
+  font-weight: bold; }
+
 .modal-container {
   width: 630px;
   height: 322px; }

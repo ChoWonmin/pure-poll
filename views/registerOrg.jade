@@ -16,43 +16,61 @@ block content
                 .line_horizontal
                 .line-title 계정 만들기
                 .line_horizontal
-            .input_container.flex-wrapper
+            .input_container.flex-wrapper.center-wrapper
                 .box-nav
                     .inputWithIcon
                         input#id-input(placeholder='이메일', type='text')
                         i.material-icons mail
                         .input-btn
-                    .error-box 중복된 이메일 입니다.
+                    .error-box#errorbox-id 필수 항목입니다.
                     .inputWithIcon
                         input#password-input(placeholder='패스워드', type='password')
                         i.material-icons lock
-                    .error-box 10자리 이상 입력해주세요.
+                    .error-box#errorbox-password 필수 항목입니다.
                     .inputWithIcon
                         input#repassword-input(placeholder='다시 한 번 입력해주세요', type='password')
                         i.material-icons lock
-                    .error-box 10자리 이상 입력해주세요.
+                    .error-box#errorbox-repassword 필수 항목입니다.
 
-                    .drop-down 사업자 분류
-                        .dropbtn.material-icons#business arrow_downward
-                        a.dropdown-content#a
-                            .option 개인 사업자
-                            .option 공공 기관
-                            .option 국가 기관
-                        i.material-icons location_on
-                    .error-box 필수 항목입니다.
+                    #business-dropdown.dropdown
+                        .dropdown-btn
+                            i.material-icons.dropdown-icon location_on
+                            .name 선택해주세요
+                            .col-8
+                            i.material-icons.dropdown-arrow keyboard_arrow_down
+                        .dropdown-content
+                            .option
+                                i.material-icons.option-icon perm_identity
+                                .name 개인 사업자
+                            .option
+                                i.material-icons.option-icon business
+                                .name 공공 기관
+                            .option
+                                i.material-icons.option-icon language
+                                .name 국가 기관
+                            .option
+                                i.material-icons.option-icon check_box
+                                .name 첫 번째 선택사항
+                            .option.bottom-shadow
+                                i.material-icons.option-icon notes
+                                .name 두 번째 선택사항
+
+                    .error-box#errorbox-business-dropdown 필수 항목입니다.
 
                     .inputWithIcon
                         input(placeholder='사업자 등록증 업로드', type='text', disabled=true)
                         i.material-icons add_a_photo
                     input#business-img( type='file')
-                    .error-box 필수 항목입니다.
+                    .error-box#errorbox-business-img 필수 항목입니다.
 
                     .inputWithIcon
-                        input#phone(placeholder='연락처를 입력해주세요', type='text')
+                        input#phone-input(placeholder=' \'-\' 를 제외한 연락처를 입력해주세요.', type='text')
                         i.material-icons call
-                    .error-box 필수 항목입니다.
+                    .error-box#errorbox-phone 필수 항목입니다.
+                    .btn#registerOrg-button 회원가입
 
                 .line_vertical
+
                 .box-nav.center-wrapper-vertical
                     .title 조사자 가입 안내
                     .sub-title 여론조사자 가입은 여론조사 관계 법령에 의거해 아래와 같은 절차가 확인이 되면 회원가입이 진행됩니다.
@@ -64,5 +82,5 @@ block content
                     i.material-icons arrow_downward
                     .sub-box.center-wrapper 회원가입 완료
 
-
+    script(src='/component/dropdown.js')
     script(src='/registerOrg.js')
