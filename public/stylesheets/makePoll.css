@@ -85,70 +85,6 @@
       -moz-box-shadow: 0 1px 0px 0 rgba(0, 0, 0, 0.12);
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.12); }
 
-.inputWithIcon {
-  position: relative;
-  height: 36px; }
-  .inputWithIcon input[type='text'], .inputWithIcon input[type='password'] {
-    padding-left: 32px;
-    width: 100%;
-    outline: none;
-    height: 36px;
-    border-radius: 3px;
-    border: 0.5px solid #aaa; }
-  .inputWithIcon i {
-    position: absolute;
-    left: 0;
-    top: 4px;
-    padding: 6px 8px;
-    color: #aaaaaa;
-    font-size: 16px; }
-
-input[type='file'] {
-  padding: 3px;
-  width: 100%;
-  outline: none;
-  height: 24px;
-  border-radius: 3px;
-  border: 0.5px solid #aaa; }
-
-.input-area {
-  padding: 12px;
-  -webkit-box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 4px 0 rgba(0, 0, 0, 0.12), 0 3px 3px -2px rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 4px 0 rgba(0, 0, 0, 0.12), 0 3px 3px -2px rgba(0, 0, 0, 0.12);
-  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 4px 0 rgba(0, 0, 0, 0.12), 0 3px 3px -2px rgba(0, 0, 0, 0.12); }
-  .input-area input {
-    width: 100%;
-    height: 48px;
-    outline: none;
-    padding-left: 12px;
-    border: transparent;
-    font-weight: bold;
-    font-size: 32px; }
-  .input-area textarea {
-    width: 100%;
-    height: 60px;
-    outline: none;
-    padding-left: 12px;
-    border: transparent; }
-
-.question-area {
-  padding: 12px;
-  border-bottom: solid 2px #aaaaaa;
-  width: 480px; }
-  .question-area input {
-    width: 100%;
-    height: 32px;
-    outline: none;
-    padding-left: 12px;
-    border: transparent;
-    font-size: 24px; }
-  .question-area textarea {
-    width: 100%;
-    height: 60px;
-    outline: none;
-    padding-left: 12px;
-    border: transparent; }
-
 .flex-wrapper {
   display: flex; }
   .flex-wrapper .col-12 {
@@ -268,19 +204,20 @@ input[type='file'] {
     -moz-box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 4px 0 rgba(0, 0, 0, 0.12), 0 3px 3px -2px rgba(0, 0, 0, 0.12);
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 4px 0 rgba(0, 0, 0, 0.12), 0 3px 3px -2px rgba(0, 0, 0, 0.12); }
   .form-wrapper .form-body {
+    width: 100%;
     border-left: solid #4ea5ff 2px;
     padding: 12px 0; }
-    .form-wrapper .form-body .line {
+    .form-wrapper .form-body .item .line {
       margin-top: 12px;
       padding: 0 12px; }
-      .form-wrapper .form-body .line .col-3 {
+      .form-wrapper .form-body .item .line .col-3 {
         display: flex;
         align-items: flex-end; }
-        .form-wrapper .form-body .line .col-3 .img-upload-btn {
+        .form-wrapper .form-body .item .line .col-3 .img-upload-btn {
           color: #aaa;
           font-size: 32px;
           margin-right: 12px; }
-    .form-wrapper .form-body .line + .bottom {
+    .form-wrapper .form-body .item .line + .bottom {
       padding-bottom: 12px;
       border-bottom: solid 1px #aaa; }
 

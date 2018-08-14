@@ -1,6 +1,5 @@
 @import "global"
 @import "./lib/dropdown"
-@import "./lib/input"
 @import "./lib/toolbar"
 @import "./lib/tooltip"
 
@@ -39,21 +38,23 @@
     font-size: 32px
     @include shadow(.12)
   .form-body
+    width: 100%
     border-left: solid $sub-color 2px
     padding: 12px 0
-    .line
-      margin-top: 12px
-      padding: 0 12px
-      .col-8
-      .col-3
-        display: flex
-        align-items: flex-end
-        .img-upload-btn
-          color: $black-color
-          font-size: 32px
-          margin-right: 12px
-    .line + .bottom
-      padding-bottom: 12px
-      border-bottom: solid 1px $black-color
+    .item
+      .line
+        margin-top: 12px
+        padding: 0 12px
+        .col-8
+        .col-3
+          display: flex
+          align-items: flex-end
+          .img-upload-btn
+            color: $black-color
+            font-size: 32px
+            margin-right: 12px
+      .line + .bottom
+        padding-bottom: 12px
+        border-bottom: solid 1px $black-color
 
 
