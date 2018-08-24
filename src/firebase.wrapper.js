@@ -26,7 +26,6 @@ const Firebase = new function() {
 
     this.getAuth = () => auth;
 
-
 }
 
 /* Firebase Test */

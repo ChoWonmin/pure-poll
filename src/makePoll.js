@@ -33,7 +33,7 @@ const Item = function(ind) {
 </div>`);
     this.$shortRes = $(`<div class="line flex-wrapper bottom response">
   <div class="col-8">
-    <div class="question-area">
+    <div class="choice-area">
       <input placeholder="답안"/>
     </div>
   </div>
@@ -41,7 +41,7 @@ const Item = function(ind) {
 </div>`);
     this.$longRes = $(`<div class="line flex-wrapper bottom response">
   <div class="col-8">
-    <div class="question-area">
+    <div class="choice-area">
       <textarea placeholder="답안"/>
     </div>
   </div>
@@ -50,10 +50,14 @@ const Item = function(ind) {
     this.$choiceRes = $(`<div class="line flex-wrapper bottom response">
   <div class="col-8">
     <div class="choice-area">
-      <textarea placeholder="답안"/>
+      <input type="radio"/>
+      <input type="text"/>
     </div>
   </div>
-  <div class="col-4"></div>
+  <div class="col-4">
+    <i id='add-choice' class="material-icons choice-icon">add</i>
+    <i id='clear-choice' class="material-icons choice-icon">clear</i>
+  </div>
 </div>`);
 
     this.dropdown = null;
@@ -77,6 +81,16 @@ const Item = function(ind) {
             } else if(option==='장문형') {
                 this.$root.children('.response').remove();
                 this.$root.append(this.$longRes);
+            } else if(option==='객관식') {
+                this.$root.children('.response').remove();
+                this.$root.append(this.$choiceRes);
+
+                console.log(this.$root)
+
+                this.$root.children('#add-choice').click(function() {
+                    console.log('asdsadsa');
+                    this.$root.append(this.$choiceRes);
+                });
             }
 
         });

@@ -69,21 +69,21 @@ input[type='file'] {
     padding-left: 12px;
     border: transparent; }
 
-.question-area {
+.choice-area, .question-area {
   display: flex;
   padding: 12px;
   border-bottom: solid 2px #aaaaaa;
   width: 480px; }
-  .question-area input[type='radio'] {
+  .choice-area input[type='radio'], .question-area input[type='radio'] {
     width: 30px; }
-  .question-area input {
+  .choice-area input, .question-area input {
     width: 100%;
     height: 32px;
     outline: none;
     padding-left: 12px;
     border: transparent;
     font-size: 24px; }
-  .question-area textarea {
+  .choice-area textarea, .question-area textarea {
     width: 100%;
     height: 60px;
     outline: none;
