@@ -26,7 +26,7 @@
 .inputWithIcon {
   position: relative;
   height: 36px; }
-  .inputWithIcon input[type='text'], .inputWithIcon input[type='password'] {
+  .inputWithIcon input[type='text'], .inputWithIcon input[type='password'], .inputWithIcon input[type='date'] {
     padding-left: 32px;
     width: 100%;
     outline: none;

@@ -54,7 +54,7 @@ const register = new function() {
         })
 
         $('#person-register').click(function() {
-            alert('per');
+            location.href='/registerResponder';
         });
 
         $('#org-register').click(function() {

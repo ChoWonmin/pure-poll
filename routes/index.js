@@ -14,8 +14,8 @@ router.get('/login', function(req, res, next) {
     res.render('login');
 });
 
-router.get('/registerOrg', function(req, res, next) {
-    res.render('registerOrg');
+router.get('/registerResponder', function(req, res, next) {
+    res.render('registerResponder');
 });
 
 router.get('/makePoll', function(req, res, next) {

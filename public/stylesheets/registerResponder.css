@@ -185,7 +185,9 @@ input[type='file'] {
     .container .register-view .sub-title {
       font-weight: bold; }
     .container .register-view .flex-wrapper {
-      margin-top: 20px; }
+      color: #aaa; }
+      .container .register-view .flex-wrapper .gender {
+        margin: 12px; }
       .container .register-view .flex-wrapper .login-nav {
         margin-left: 6px;
         color: #4ea5ff;
@@ -249,4 +251,4 @@ input[type='file'] {
   margin: 20px;
   border: solid .5px #707070; }
 
-/*# sourceMappingURL=registerOrg.css.map */
+/*# sourceMappingURL=registerResponder.css.map */

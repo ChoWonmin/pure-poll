@@ -1,0 +1,84 @@
+extends layout
+
+block content
+    link(rel='stylesheet', href='/stylesheets/registerResponder.css')
+
+    .container
+        .left-view.center-wrapper
+            .title 어떤 것을 알아 보고 싶으세요?
+        .register-view.center-wrapper-vertical
+            .title 여론조사자 회원가입
+            .flex-wrapper
+                .sub-title 이미 회원이신가요?
+                .login-nav 로그인
+                i.material-icons.blue play_arrow
+            .liner
+                .line_horizontal
+                .line-title 계정 만들기
+                .line_horizontal
+            .input_container.flex-wrapper.center-wrapper
+                .box-nav
+                    .inputWithIcon
+                        input#id-input(placeholder='이메일', type='text')
+                        i.material-icons mail
+                    .error-box#errorbox-id 필수 항목입니다.
+                    .inputWithIcon
+                        input#password-input(placeholder='패스워드', type='password')
+                        i.material-icons lock
+                    .error-box#errorbox-password 필수 항목입니다.
+                    .inputWithIcon
+                        input#repassword-input(placeholder='다시 한 번 입력해주세요', type='password')
+                        i.material-icons lock
+                    .error-box#errorbox-repassword 필수 항목입니다.
+
+                    #location-dropdown.dropdown
+                        .dropdown-btn
+                            i.material-icons.dropdown-icon location_on
+                            .name 선택해주세요
+                            .col-8
+                            i.material-icons.dropdown-arrow keyboard_arrow_down
+                        .dropdown-content
+                            .option
+                                i.material-icons.option-icon perm_identity
+                                .name 서울특별시
+                            .option
+                                i.material-icons.option-icon business
+                                .name 경기도
+                            .option
+                                i.material-icons.option-icon language
+                                .name 강원도
+                            .option
+                                i.material-icons.option-icon check_box
+                                .name 첫 번째 선택사항
+                            .option.bottom-shadow
+                                i.material-icons.option-icon notes
+                                .name 두 번째 선택사항
+
+                    .error-box#errorbox-location-dropdown 필수 항목입니다.
+
+
+                    .flex-wrapper.center-wrapper 성별
+                        .material-icons accessibility
+                        form#gender-input
+                        .gender 남자
+                            input#male(type='radio' name='ad')
+                        .gender 여자
+                            input#female(type='radio' name='ad')
+
+                    .error-box#errorbox-gender 필수 항목입니다.
+
+                    .inputWithIcon
+                        i.material-icons calendar_today
+                        input#date-input(type='date')
+                    .error-box#errorbox-date 필수 항목입니다.
+
+                    .flex-wrapper
+                        .btn#kakaoAuth-button 카카오톡 인증하기
+                        .btn#registerResponder-button 회원가입
+
+
+
+    script(src='/component/dropdown.js')
+    script(src='/registerResponder.js')
+    script(src="//developers.kakao.com/sdk/js/kakao.min.js")
+    script(src="kakao.wrapper.js")
